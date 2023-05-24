@@ -7,7 +7,7 @@ This guide explains how to enable TLS based connections for the Milvus Node SDK.
 The patch can accept the following arguments:
 
 1. **Certificate Authority / Server Certificates (CA pem or Server Pem)**: Default value is `ca.pem`. The presence of this file is required.
-2. **Client Certificates (Client Pem, and Client Key)**: Default value is `null`. The presence of this file is optional for one-way TLS (tlsMode 1) and required for two-way TLS (tlsMode 2).
+2. **Client Certificates (Client Pem, and Client Key)**: Default value is `null`. The presence of both of these files is optional for one-way TLS (tlsMode 1) and required for two-way TLS (tlsMode 2).
 3. **Common Name**: Default value is `localhost`.
 
 The root of the JavaScript project is where the current working directory is set to. This means, for example, `/path/to/your/project/ca.pem` would be inputted as `ca.pem`.
