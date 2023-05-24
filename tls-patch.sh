@@ -39,7 +39,7 @@ replace_string() {
 }
 # Define the variables (similar to the arguments in the original main function)
 # Default values for the variables
-ca_file_path="server.pem"
+ca_file_path="ca.pem"
 key_file_path=null
 pem_file_path=null
 common_name="localhost"
