@@ -20,9 +20,9 @@ If you are using Node.js, you can change these arguments through the main functi
 ### Bash Script
 If you are using the bash script, you can provide the arguments as command-line options like this:
 
-\`\`\`bash
+```bash
 ./tls-patch.sh -ca=myca.pem -key=./clientstuff/myclient.key -cert=mycert.pem -cn=mydomain.com
-\`\`\`
+```
 
 **Note:** Remember to make the bash script executable by running: `chmod +x tls-patch.sh`
 
@@ -31,14 +31,14 @@ If you are using the bash script, you can provide the arguments as command-line 
 You can run the patch using Node.js or bash.
 
 ### Node.js
-\`\`\`bash
+```bash
 node tls-patch.js
-\`\`\`
+```
 
 ### Bash
-\`\`\`bash
+```bash
 ./tls-patch.sh
-\`\`\`
+```
 
 Executing the patch script will modify the installed `node_modules` package in your project, enabling support for one-way and two-way TLS connections.
 
