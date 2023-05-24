@@ -42,7 +42,7 @@ node tls-patch.js
 
 Executing the patch script will modify the installed `node_modules` package in your project, enabling support for one-way and two-way TLS connections.
 
-As for additional information, considering the knowledge gained from the provided code, it's important to note that this script modifies the installed `node_modules` package directly. Therefore, any updates or reinstallations of the package will necessitate re-running the patch. The patch operation is idempotent - it can be executed multiple times without changing the result beyond the initial application. 
+As for additional information, considering the knowledge gained from the provided code, it's important to note that this script modifies the installed `node_modules` package directly. Therefore, any updates or reinstallations of the package will necessitate re-running the patch. The patch operation is *idempotent* - it can be executed safely multiple times. 
 
 This script is specifically designed to work with the Milvus Node SDK. Using it with other packages or in other contexts might result in unexpected behavior. 
 
